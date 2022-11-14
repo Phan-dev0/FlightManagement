@@ -1,0 +1,38 @@
+{% extends 'pages/base.html' %}
+
+{% block cssLink %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pages/register.css') }}">
+{% endblock %}
+
+{% block title %}Register{% endblock %}
+
+{% block header %}
+<header class="header-register" role="banner" style="background-image: url(../../static/imgs/img_bg_register.jpg)">
+  <div class="container container-header-register">
+    <div class="text text-center">
+      <h1>Register An Account To Book Plane Ticket!</h1>	
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <form action="" class="form form-bg-white mx-auto">
+        <div class="form__title">
+          <h2 class="text-black">Create Account</h2>
+          <p>Please Register using account detail bellow.</p>
+        </div>
+        <input type="text" class="input input-bg-white mb-4 text-black" placeholder="First name" />
+        <input type="text" class="input input-bg-white mb-4 text-black" placeholder="Last name" />
+        <input type="text" class="input input-bg-white mb-4 text-black" placeholder="Number" />
+        <input type="text" class="input input-bg-white mb-4 text-black" placeholder="Password" />
+        <div>
+          <button class="button btn-org-to-white my-4">Create</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+{% endblock %}
